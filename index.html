@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #products{
+        margin: 0px auto;
+        margin-top: 10px;
+        width: 50%;
+        margin-left: 30%;
+        padding: 50px;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="url"]
+      {
+        margin-top: 2%;
+        padding: 15px 15px ;
+        border-radius: 5px;
+      }
+      #formbox{
+        width: 50%;
+        height: auto;
+        background-color: teal;
+        margin: auto;
+        border-radius: 5px;
+      }
+      #formbox>h2{
+      text-align: center;
+      }
+      #add_product{
+        margin-top: 2%;
+        padding: 15px 15px ;
+        border-radius: 5px;
+        margin-left: 2%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+      <a href="inventory.html"><button id="show_products">Show Products</button></a>
+    </div>
+    <div id="formbox">
+      <h2>Add Products</h2>
+      <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+
+      <form id="products">
+        <input type="text" placeholder="Type" id="type" required><br>
+        <input type="text" placeholder="Description" id="desc" required><br>
+        <input type="number" placeholder="Price" id="price" required><br>
+        <input type="url" placeholder="Image_URL" id="image" required><br>
+        <button onclick="myfunction()" id="add_product">Add Product</button>
+      </form>
+
+      <!--Create four inputs to accept Type, Description, price, & image-->
+      <!--give the inputs following respective id's, "type", "desc", "price","image"-->
+      <!--create a "Add Product" button to submit form, give it html id as "add_product"-->
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
